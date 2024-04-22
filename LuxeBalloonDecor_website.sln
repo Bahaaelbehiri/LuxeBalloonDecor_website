@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeBalloonDecor_website.Server", "LuxeBalloonDecor_website.Server\LuxeBalloonDecor_website.Server.csproj", "{6BD23F11-D655-4978-8EE9-89936499F211}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "luxeballoondecor_website.client", "luxeballoondecor_website.client\luxeballoondecor_website.client.esproj", "{1BFA5B6F-1289-46A8-B400-2B5C6C8146FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BD23F11-D655-4978-8EE9-89936499F211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD23F11-D655-4978-8EE9-89936499F211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD23F11-D655-4978-8EE9-89936499F211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD23F11-D655-4978-8EE9-89936499F211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFA5B6F-1289-46A8-B400-2B5C6C8146FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFA5B6F-1289-46A8-B400-2B5C6C8146FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFA5B6F-1289-46A8-B400-2B5C6C8146FF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1BFA5B6F-1289-46A8-B400-2B5C6C8146FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFA5B6F-1289-46A8-B400-2B5C6C8146FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFA5B6F-1289-46A8-B400-2B5C6C8146FF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A6DBD7E-3B4D-4952-A79F-1D6D1DC0245B}
+	EndGlobalSection
+EndGlobal
