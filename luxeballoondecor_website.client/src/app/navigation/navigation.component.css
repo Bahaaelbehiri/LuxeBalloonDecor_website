@@ -1,0 +1,21 @@
+.navbar-nav .nav-link{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .bi {
+    margin-right: 8px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons .bi {
+    font-size: 1.5rem;
+}
+
+.navbar-brand img {
+    max-height: 240px;
+}
