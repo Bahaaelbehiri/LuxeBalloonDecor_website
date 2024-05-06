@@ -1,0 +1,6 @@
+@LuxeBalloonDecor_website.Server_HostAddress = http://localhost:5233
+
+GET {{LuxeBalloonDecor_website.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
