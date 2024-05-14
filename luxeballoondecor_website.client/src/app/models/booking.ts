@@ -5,6 +5,7 @@ export interface BookingInventory {
 }
 
 export interface Booking {
+  ID: number,
   customerID: number,
   bookingDate: Date,
   bookingItems: BookingInventory

@@ -6,6 +6,7 @@ export interface InventoryItemVariants {
 }
 
 export interface InventoryItem {
+  ID: number,
   image: Image,
   title: string,
   description: string,
