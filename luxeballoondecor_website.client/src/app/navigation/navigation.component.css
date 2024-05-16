@@ -53,7 +53,7 @@ p {
 
 ::selection {
   background-color: #000;
-  color: #fff;
+  color: black;
 }
 
 .form-control::placeholder {
@@ -72,8 +72,7 @@ p {
 
 
   .header .navbar .navbar-brand img {
-    max-width: 300px;
-    height: 300px;
+    
   }
 
   .header .navbar-nav .nav-link {
@@ -100,6 +99,7 @@ p {
 
 
     .header .navbar-nav .nav-link::after {
+      color:black;
       position: absolute;
       content: "";
       width: 0%;
@@ -121,7 +121,7 @@ p {
   }
 
     .header .navbar .socail a {
-      color: #50061c;
+      color: black;
       font-size: 16px;
     }
 
@@ -191,3 +191,35 @@ img {
 .item:hover .item-img img {
   transform: scale(1.1);
 }
+
+/* Start Landing Section */
+.landing {
+  
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+
+  .landing .intro-text {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
+    color: black;
+  }
+
+    .landing .intro-text h1 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 35px;
+      color: var(--main-color);
+    }
+
+    .landing .intro-text p {
+      font-size: 40px;
+      line-height: 1.8;
+    }
+/* End Landing Section */

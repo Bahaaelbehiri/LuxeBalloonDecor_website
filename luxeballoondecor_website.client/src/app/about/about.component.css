@@ -1,0 +1,21 @@
+.appointment {
+  margin-top: -250;
+}
+
+  .appointment p {
+    font-size: 15px !important;
+    color: black !important;
+    margin-left: 150px;
+  }
+
+  .appointment h1 {
+    margin-top: 100px;
+    font-size: 70px;
+    margin-left: 150px;
+  }
+
+.appointment-image {
+  margin-right: 25px;
+  margin-top: 100px;
+}
+

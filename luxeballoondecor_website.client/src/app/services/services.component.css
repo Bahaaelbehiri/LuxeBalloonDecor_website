@@ -1,0 +1,25 @@
+
+.Services {
+  
+  margin-left: 10px;
+}
+
+  .Services img {
+    width: 622px !important;
+    height:500px !important;
+  }
+
+  .Services h1 {
+    font-size: 100px;
+    font-weight: 700;
+   
+    text-align: center !important;
+  }
+.section-tittle{
+    margin-top: -250px;
+}
+
+.rentalItem img {
+  width: 400px !important;
+  height: 500px !important;
+}

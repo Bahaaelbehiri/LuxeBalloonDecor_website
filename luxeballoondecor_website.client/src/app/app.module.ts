@@ -10,11 +10,12 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { TermsComponent } from './terms/terms.component';
 import { RouterModule, Routes } from '@angular/router';
+import { CardComponent } from './cards/card/card.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingCarouselComponent } from './landing-carousel/landing-carousel.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'about', component: AboutComponent },
@@ -32,6 +33,7 @@ const routes: Routes = [
     AboutComponent,
     ContactComponent,
     TermsComponent,
+    CardComponent
     LandingCarouselComponent
   ],
   imports: [

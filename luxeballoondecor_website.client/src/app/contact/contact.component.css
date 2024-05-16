@@ -1,0 +1,30 @@
+
+.appointment {
+  margin-top: -250;
+}
+.Contact h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 75px;
+}
+
+.Contact .col-lg-4 h2 {
+    margin:50px;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 150px important!;
+}
+
+.Contact .col-lg-4 p {
+  font-size: 15px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.mb-3 button {
+  margin-left: 350px;
+  margin-right: 350px;
+}
+.ContactUs{
+    margin-top: -250px;
+}

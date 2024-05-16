@@ -23,3 +23,12 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'gallery', component: GalleryComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'terms', component: TermsComponent }
+  
+];
