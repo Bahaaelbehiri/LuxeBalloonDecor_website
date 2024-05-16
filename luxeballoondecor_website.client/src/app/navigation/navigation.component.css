@@ -62,14 +62,14 @@ p {
 
 /* header */
 .header {
-  padding: 0px 38px;
-  position: absolute;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 19%, rgba(255, 255, 255, 0.6) 27%, rgba(255, 255, 255, 0.4) 51%, rgba(255, 255, 255, 0.3) 73%, rgba(255, 255, 255, 0.2) 77%, rgba(255, 255, 255, 0) 100%);
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  border-bottom: 1px solid rgb(129, 126, 126);
-  z-index: 99;
+  z-index: 1050;
 }
+
 
   .header .navbar .navbar-brand img {
     max-width: 300px;
@@ -77,15 +77,27 @@ p {
   }
 
   .header .navbar-nav .nav-link {
-    color: #3b266d;
-    margin: 0 14px;
+    color: #000; /* Consistent color coding */
+    font-weight: 600; /* Standard font-weight for better cross-browser compatibility */
+    margin: 0 1rem; /* Use rem for consistent scaling */
     text-transform: capitalize;
-    font-weight: 400;
-    padding: 28px 7px;
+    padding: 1.75rem 0.438rem; /* Use rem for padding */
     display: block;
-    font-size: 16px;
+    font-size: 1rem; /* Base font size */
     position: relative;
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
   }
+
+  .header .navbar-nav .nav-link:focus {
+    outline: 2px solid #0056b3; /* Blue outline for better visibility on focus */
+    outline-offset: 2px;
+}
+
+    .header .navbar-nav .nav-link:hover {
+      color: #555; /* Subtle hover effect */
+    }
+
+
 
     .header .navbar-nav .nav-link::after {
       position: absolute;
@@ -95,7 +107,6 @@ p {
       left: 0;
       bottom: 0;
       background-color: #000;
-      ;
       transition: all .5s;
     }
 
@@ -174,7 +185,7 @@ img {
 }
 
 .item-img img {
-  transform: all .5s;
+  transition: all 0.5s;
 }
 
 .item:hover .item-img img {

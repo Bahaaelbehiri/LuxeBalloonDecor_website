@@ -1,17 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-landing-carousel',
   templateUrl: './landing-carousel.component.html',
-  styleUrls: ['./landing-carousel.component.css']
+  styleUrls: ['./landing-carousel.component.css'],
+  providers: [NgbCarouselConfig]
 })
-export class LandingCarouselComponent implements OnInit {
+export class LandingCarouselComponent {
   constructor(config: NgbCarouselConfig) {
-    config.interval = 2500;
+    config.interval = 4500;
     config.wrap = true;
     config.keyboard = true;
-    config.pauseOnHover = false;
+    config.pauseOnHover = true;
   }
   ngOnInit() {
 
