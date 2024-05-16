@@ -22,7 +22,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
-export class AppRoutingModule { }                                
+export class AppRoutingModule { }
 export const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'services', component: ServicesComponent },
