@@ -1,0 +1,9 @@
+.landing-carousel-container {
+    max-height: 100vh;
+}
+
+.carousel-image 
+{
+    max-height: 100vh;
+    object-fit: none;
+}

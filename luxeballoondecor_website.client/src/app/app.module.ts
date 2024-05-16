@@ -11,6 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { TermsComponent } from './terms/terms.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CardComponent } from './cards/card/card.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LandingCarouselComponent } from './landing-carousel/landing-carousel.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -32,11 +34,13 @@ const routes: Routes = [
     ContactComponent,
     TermsComponent,
     CardComponent
+    LandingCarouselComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
