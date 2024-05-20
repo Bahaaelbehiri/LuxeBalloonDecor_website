@@ -1,6 +1,10 @@
 /*  */
+.GalleryPadding {
+}
+
 .new-product-area {
   margin: 100px;
+  margin-top: 35rem;
   height: 600px;
   /* background-color: #626669; */
 }
