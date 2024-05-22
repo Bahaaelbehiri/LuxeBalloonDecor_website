@@ -1,6 +1,10 @@
 
+.ServicesPadding {
+    margin-top: 35rem;
+}
+
 .Services {
-  
+  /*margin-top: 60rem;*/
   margin-left: 10px;
 }
 

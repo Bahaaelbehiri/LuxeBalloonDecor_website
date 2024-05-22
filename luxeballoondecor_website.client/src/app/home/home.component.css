@@ -6,6 +6,11 @@
 /*  */
 
 /*  */
+
+.home {
+    margin-top:4rem;
+}
+
 html::-webkit-scrollbar {
   width: 10px;
   height: 16px;

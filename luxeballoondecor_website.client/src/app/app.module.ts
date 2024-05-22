@@ -15,26 +15,29 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingCarouselComponent } from './landing-carousel/landing-carousel.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: 'home', redirectTo: '', pathMatch:'full'},
+  { path: '', component: HomeComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
-  {path: 'terms', component: TermsComponent},
+  { path: 'terms', component: TermsComponent },
+  { path: 'landing-carousel', component: LandingCarouselComponent }
+
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    HomeComponent,
+    LandingCarouselComponent,
     ServicesComponent,
     GalleryComponent,
     AboutComponent,
     ContactComponent,
     TermsComponent,
-    CardComponent
-    LandingCarouselComponent
+    CardComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
