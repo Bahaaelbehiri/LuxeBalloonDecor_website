@@ -8,7 +8,13 @@
 /*  */
 
 .home {
-    margin-top:4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.home > * {
+    margin: 0;
+    padding: 0;
 }
 
 html::-webkit-scrollbar {

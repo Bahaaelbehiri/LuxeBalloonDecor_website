@@ -1,46 +1,52 @@
-<section class=" home">
+<section class="home">
 
-  <div class="landing-carousel-container">
-    <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true">
-      <ng-template ngbSlide>
-        <img src="/assets/images/PinkYellowWhiteGarland.jpg" alt="First slide" class="carousel-image d-block w-100" />
-        <div class="carousel-caption">
-          <h3>First Slide</h3>
-          <p>Description for the first slide.</p>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active font-merriweather-sans" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" class="font-merriweather-sans" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" class="font-merriweather-sans" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" class="font-merriweather-sans" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="assets/images/PinkYellowWhiteGarland.jpg" class="d-block w-100" alt="Image of Balloon Garland">
+        <div class="carousel-caption d-none d-md-block font-merriweather-sans">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
         </div>
-      </ng-template>
-
-      <ng-template ngbSlide>
-        <img src="/assets/images/BlackGoldBeigeGarland.jpg" alt="Second slide" class="carousel-image d-block w-100" />
-        <div class="carousel-caption">
-          <h3>First Slide</h3>
-          <p>Description for the second slide.</p>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="assets/images/BlackGoldBeigeGarland.jpg" class="d-block w-100" alt="Image of Balloon Garland">
+        <div class="carousel-caption d-none d-md-block font-merriweather-sans">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
         </div>
-      </ng-template>
-
-      <ng-template ngbSlide>
-        <img src="\assets\images\PinkGoldWhiteWall.JPG" alt="Third slide" class="carousel-image d-block w-100" />
-        <div class="carousel-caption">
-          <h3>First Slide</h3>
-          <p>Description for the third slide.</p>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="assets/images/PinkGoldWhiteWall.JPG" class="d-block w-100" alt="Image of Balloon Wall">
+        <div class="carousel-caption d-none d-md-block font-merriweather-sans">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
         </div>
-      </ng-template>
-
-      <ng-template ngbSlide>
-        <img src="/assets/images/SilverBlueWhiteArchDiscoWall.jpg" alt="Fourth slide" class="carousel-image d-block w-100" />
-        <div class="carousel-caption">
-          <h3>First Slide</h3>
-          <p>Description for the fourth slide.</p>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="assets/images/SilverBlueWhiteArchDiscoWall.jpg" class="d-block w-100" alt="Image of Balloon Arch">
+        <div class="carousel-caption d-none d-md-block font-merriweather-sans">
+          <h5>Fourth slide label</h5>
+          <p>Some representative placeholder content for the fourth slide.</p>
         </div>
-      </ng-template>
-    </ngb-carousel>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
+
 </section>
-<br />
-<br />
-
-<br />
-
-<br />
 
 <app-contact></app-contact>

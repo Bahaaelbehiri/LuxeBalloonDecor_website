@@ -4,9 +4,28 @@
 /* CDN font */
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap");
 
-/*  */
 
-/*  */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 19%, rgba(255, 255, 255, 0.6) 27%, rgba(255, 255, 255, 0.4) 51%, rgba(255, 255, 255, 0.3) 73%, rgba(255, 255, 255, 0.2) 77%, rgba(255, 255, 255, 0) 100%);
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 100%
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.navbar-toggler {
+  z-index: 1001;
+}
+
+
 html::-webkit-scrollbar {
   width: 10px;
   height: 16px;
@@ -58,6 +77,7 @@ p {
 
 .form-control::placeholder {
   color: aqua !important;
+<<<<<<< HEAD
 }
 
 /* header */
@@ -72,10 +92,13 @@ p {
 
 
   
+=======
+}  
+>>>>>>> d428e40 (updating carousel to fit view, navbar to fit with carousel)
 
   .header .navbar-nav .nav-link {
     color: #000; /* Consistent color coding */
-    font-weight: 600; /* Standard font-weight for better cross-browser compatibility */
+    font-weight: 500; /* Standard font-weight for better cross-browser compatibility */
     margin: 0 1rem; /* Use rem for consistent scaling */
     text-transform: capitalize;
     padding: 1.75rem 0.438rem; /* Use rem for padding */
@@ -94,10 +117,7 @@ p {
       color: #555; /* Subtle hover effect */
     }
 
-
-
     .header .navbar-nav .nav-link::after {
-      color:black;
       position: absolute;
       content: "";
       width: 0%;
@@ -123,7 +143,7 @@ p {
       font-size: 16px;
     }
 
-      .header .navbar .socail a i {
+      .header .navbar .social a i {
         transition: all .5s;
       }
 
