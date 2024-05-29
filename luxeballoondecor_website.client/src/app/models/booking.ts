@@ -1,12 +1,10 @@
-import { InventoryItem } from "./inventory_item"
-
-export interface BookingInventory {
-  $values: InventoryItem[]
-}
+import { BookingStatusEnum } from "./Enumerators";
 
 export interface Booking {
-  ID: number,
-  customerID: number,
-  bookingDate: Date,
-  bookingItems: BookingInventory
+  bookingID: number,
+  venueID: number,
+  personID: number,
+  dateTime: Date,
+  orderNumber: number,
+  bookingStatus: BookingStatusEnum
 }

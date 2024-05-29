@@ -13,14 +13,25 @@ namespace LuxeBalloonDecor_website.Server.Data
             : base(options)
         {
         }
-
-        public DbSet<LuxeBalloonDecor_website.Server.Models.Testimonial> Testimonial { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.Address> Address { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.Analytics> Analytics { get; set; } = default!;
         public DbSet<LuxeBalloonDecor_website.Server.Models.Booking> Booking { get; set; } = default!;
-        public DbSet<LuxeBalloonDecor_website.Server.Models.Customer> Customer { get; set; } = default!;
-        public DbSet<LuxeBalloonDecor_website.Server.Models.CustomerBookings> CustomerBookings { get; set; } = default!;
-        public DbSet<LuxeBalloonDecor_website.Server.Models.Image> Image { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.BookingDetails> BookingDetails { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.BookingInventory> BookingInventory { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.CommunicationLogEntry> CommunicationLogEntry { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.ContactInfo> ContactInfo { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.FinancialRecord> FinancialRecord { get; set; } = default!;
         public DbSet<LuxeBalloonDecor_website.Server.Models.InventoryItem> InventoryItem { get; set; } = default!;
-        public DbSet<LuxeBalloonDecor_website.Server.Models.InventoryVariant> InventoryVariant { get; set; } = default!;
-        public DbSet<LuxeBalloonDecor_website.Server.Models.VariantPrice> VariantPrice { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.InventoryRequest> InventoryRequest { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.InvoiceDetails> InvoiceDetails { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.MultimediaContent> MultimediaContent { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.Page> Page { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.PageElement> PageElement { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.PersonDetails> PersonDetails { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.StyleSettings> StyleSettings { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.UsageDetails> UsageDetails { get; set; } = default!;
+        public DbSet<LuxeBalloonDecor_website.Server.Models.Venue> Venue { get; set; } = default!;
+
+
     }
 }
