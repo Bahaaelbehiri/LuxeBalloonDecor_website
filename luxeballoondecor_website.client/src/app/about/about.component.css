@@ -1,21 +1,122 @@
 .about {
-  margin-top: 20rem;
+  margin-top: -1rem;
 }
 
-  .appointment p {
-    font-size: 15px !important;
-    color: black !important;
-    margin-left: 150px;
-  }
+.appointment{
+    height:800px;
+}
+.appointment p {
+  font-size: 15px !important;
+  color: black !important;
+  margin-left: 150px;
+}
 
   .appointment h1 {
     margin-top: 100px;
     font-size: 70px;
-    margin-left: 150px;
+    margin-left: 50px;
   }
 
 .appointment-image {
   margin-right: 25px;
   
 }
+
+/* fotter */
+.footerclass {
+  height: 1500px;
+}
+
+.fotter-socail i {
+  margin-left: 25px;
+  font-size: 40px;
+  color: white;
+}
+
+.col1 {
+  margin-top: 120px;
+  text-align: left;
+  color: white;
+  font-size: 35px;
+  padding: 150px;
+}
+
+.col2 {
+  margin-bottom: 40px;
+  text-align: left;
+  color: white;
+  font-size: 35px;
+  padding: 150px;
+}
+
+i {
+  text-decoration: none;
+}
+
+.col1 a {
+  color: white !important;
+}
+
+footer .fotter-socail a i:hover {
+  transform: rotateY(-180deg);
+}
+
+footer .fotter-socail a i {
+  transition: all .5s;
+}
+
+.pt-2 ::placeholder {
+  color: black !important;
+  font-size: 25px;
+  opacity: 1; /* Firefox */
+}
+
+
+
+.text-center {
+  color: white;
+}
+
+.item2 {
+  border-radius: 20px;
+  border: 3px solid black;
+  width: 200px;
+  margin: 30px auto;
+  height: 60px;
+  text-align: center;
+  background-color: #fff;
+  transition: all .5s;
+  position: relative;
+}
+
+  .item2 a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .item2 h1 {
+    /* padding:  10px auto; */
+    padding-top: 5px;
+    font-size: 20px;
+    position: relative;
+    z-index: 111;
+    display: inline-block;
+  }
+
+  .item2 .overlay2 {
+    width: 0%;
+    height: 100%;
+    background-color: lightcoral;
+    position: absolute;
+    inset: 0;
+    transition: all .5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+
+  .item2:hover .overlay2 {
+    width: 100%;
+  }
+
+/* fotter */
+
+
 
