@@ -16,7 +16,7 @@ export class LandingCarouselComponent implements AfterViewInit {
         const scrollPosition = carouselElement.offsetTop +300; // Get the position of the carousel
         window.scrollTo({
           top: scrollPosition, // Scroll to the top position of the carousel
-          behavior: 'smooth' // Smooth scrolling
+          behavior: 'smooth'
         });
       }
     }, 100); // Adjust the delay as needed

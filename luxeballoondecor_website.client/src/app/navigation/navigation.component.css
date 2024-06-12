@@ -77,7 +77,6 @@ p {
 
 .form-control::placeholder {
   color: aqua !important;
-<<<<<<< HEAD
 }
 
 /* header */
@@ -89,12 +88,6 @@ p {
   left: 0;
   z-index: 1050;
 }
-
-
-  
-=======
-}  
->>>>>>> d428e40 (updating carousel to fit view, navbar to fit with carousel)
 
   .header .navbar-nav .nav-link {
     color: #000; /* Consistent color coding */
