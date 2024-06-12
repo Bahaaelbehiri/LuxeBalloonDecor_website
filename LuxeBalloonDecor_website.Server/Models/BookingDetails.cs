@@ -7,7 +7,5 @@ namespace LuxeBalloonDecor_website.Server.Models
         [Key]
         public int bookingDetailsID { get; set; }
         public int bookingID { get; set; }
-        public int venueID { get; set; }
-        public int inventoryID { get; set; }
     }
 }
