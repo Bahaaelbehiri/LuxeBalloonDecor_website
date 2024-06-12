@@ -9,10 +9,21 @@ namespace LuxeBalloonDecor_website.Server.Data
 {
     public class LuxeBalloonContext : DbContext
     {
-        public LuxeBalloonContext (DbContextOptions<LuxeBalloonContext> options)
-            : base(options)
+        public LuxeBalloonContext (DbContextOptions<LuxeBalloonContext> options) : base(options)
         {
         }
+        
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            foreach (var property in modelBuilder.Model.GetEntityTypes()
+                .SelectMany(type => type.GetProperties())
+                .Where(p => p.ClrType == typeof(decimal) || p.ClrType == typeof(decimal?)))
+            {
+                property.SetColumnType("decimal(18,2)");
+            }
+        }
+
+
         public DbSet<LuxeBalloonDecor_website.Server.Models.Address> Address { get; set; } = default!;
         public DbSet<LuxeBalloonDecor_website.Server.Models.Analytics> Analytics { get; set; } = default!;
         public DbSet<LuxeBalloonDecor_website.Server.Models.Booking> Booking { get; set; } = default!;

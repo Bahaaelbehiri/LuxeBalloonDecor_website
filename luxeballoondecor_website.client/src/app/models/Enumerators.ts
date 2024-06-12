@@ -63,9 +63,20 @@ export enum FinancialStatusEnum {
 // Missing Ones
 
 export enum EntryTypeEnum {
-
+  CHEQUE,
+  CREDIT,
+  DEBIT,
+  CASH,
+  PAYPAL,
+  CASHAPP,
+  VENMO,
+  ZELLE
 }
 
 export enum ContentTypeEnum {
-
+  GALLERY,
+  CARD,
+  SERVICES,
+  CAROUSEL,
+  MISC
 }
