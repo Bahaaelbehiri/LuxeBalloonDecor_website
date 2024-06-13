@@ -100,14 +100,14 @@ export class DataService {
   }
 
   // TODO: Figure out ways to do this, as it sits. will need to do in modify record
-  generateInvoice() {
+  //generateInvoice() {
 
-  }
+  //}
 
   //TODO: Complete this when incriment views is done
-  updateInventoryQuantity(inventoryid: number, newquantity: number) {
+  //updateInventoryQuantity(inventoryid: number, newquantity: number) {
 
-  }
+  //}
 
   // TODO: Figure out pipe, documentation confusing (Track usage alternative)
   getUsageDetails(usageid: number): Observable<UsageDetails> {
@@ -153,23 +153,23 @@ export class DataService {
   }
 
   //TODO: impliment like view counter
-  trackView() {
+  //trackView() {
 
-  }
+  //}
 
   updateVenue(updatedvenue: Venue): Observable<Venue> {
     return this.http.put<Venue>(`/api/Venue/${updatedvenue.venueID}`, updatedvenue);
   }
 
   // TODO: figure out Assign contact
-  assignContact(contactinfoid: number) {
+  //assignContact(contactinfoid: number) {
 
-  }
+  //}
 
   //TODO Finish
-  searchVenue(name: string): Observable<Venue[]> {
-    this.http.get<Venue>(`/api/Venue/`).subscribe(data => {
+  //searchVenue(name: string): Observable<Venue[]> {
+  //  this.http.get<Venue>(`/api/Venue/`).subscribe(data => {
       
-    });
-  }
+  //  });
+  //}
 }
