@@ -1,3 +1,6 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using LuxeBalloonDecor_website.Server.Data;
 
 namespace LuxeBalloonDecor_website.Server
 {
@@ -6,6 +9,8 @@ namespace LuxeBalloonDecor_website.Server
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<LuxeBalloonContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("LuxeBalloonContext") ?? throw new InvalidOperationException("Connection string 'LuxeBalloonContext' not found.")));
 
             // Add services to the container.
 
