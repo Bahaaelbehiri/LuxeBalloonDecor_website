@@ -1,0 +1,106 @@
+div .testimonial-grid {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+div .tesimonial-component container-fluid section-padding30 {
+    margin-top: 40px;
+}
+#app-testimonial {
+    margin-bottom: 0;
+}
+
+/* General styling */
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Testimonial Component */
+.testimonial-component {
+  background-color: rgb(207, 244, 252); /* Light blue background */
+  color: rgb(0, 32, 63); /* Dark blue text */
+  padding: 50px 0; /* Padding for spacing */
+}
+
+.section-title-bar {
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* White text */
+  font-weight: bold; /* Bold text */
+  padding: 10px 0; /* Padding for some spacing */
+  text-align: center; /* Center align the text */
+  width: 100%; /* Ensure it spans the full width */
+}
+
+  .section-title-bar h2 {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align the heading */
+    width: 100%; /* Ensure heading takes full width */
+  }
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between items */
+  justify-content: center; /* Center align the grid */
+}
+
+.testimonial-item {
+  background-color: #ffffff; /* White background for items */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+}
+
+.testimonial-title {
+  font-size: 1.5rem; /* Larger title */
+  font-weight: bold;
+  color: rgb(0, 32, 63); /* Dark blue */
+  margin-bottom: 10px;
+}
+
+.testimonial-date {
+  font-size: 1rem; /* Smaller date */
+  color: rgb(5, 81, 96); /* Slightly lighter blue */
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1rem; /* Normal text size */
+  color: rgb(0, 32, 63); /* Dark blue */
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 1rem; /* Normal text size */
+  font-style: italic;
+  color: rgb(0, 32, 63); /* Dark blue */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .testimonial-item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-title {
+    font-size: 1.2rem; /* Smaller title on small screens */
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem; /* Smaller text size on small screens */
+  }
+
+  .testimonial-author {
+    font-size: 0.9rem; /* Smaller author text size on small screens */
+  }
+}

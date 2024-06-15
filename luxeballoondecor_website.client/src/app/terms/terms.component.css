@@ -1,11 +1,80 @@
-.terms {
-  margin-top: -4rem;
-}
-.terms h2 {
-    text-align: center;
+/* General styling */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 20px; /* Base font size */
 }
 
+/* Terms Component */
+.terms {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+  padding: 0; /* Ensure no extra padding */
+}
+
+/* Title Bar Styling */
+.terms-title-bar {
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* White text */
+  font-weight: bold; /* Bold text */
+  padding: 10px 0; /* Padding for some spacing */
+  text-align: center; /* Center align the text */
+  width: 100%; /* Ensure it spans the full width of the viewport */
+  margin-top: 230px; /* Remove default margin */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+  .terms-title-bar h2 {
+    font-size: 36px; /* Increase font size */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align the heading */
+    width: 100%; /* Ensure heading takes full width */
+  }
+
+/* Terms Section Styling */
 .terms p {
-  font-size:20px;
-  
+  font-size: 20px;
+  line-height: 1.5; /* Improve readability */
+  margin: 10px 0; /* Add margin between paragraphs */
+}
+
+.terms h3 {
+  font-size: 24px; /* Increase font size for headings */
+  font-weight: bold; /* Make headings bold */
+  color: #333; /* Darker color for headings */
+  margin-top: 30px; /* Add margin above headings */
+  margin-bottom: 10px; /* Add margin below headings */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .terms-title-bar h2 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .terms h3 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .terms p {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .terms-title-bar h2 {
+    font-size: 24px; /* Adjust font size for small screens */
+  }
+
+  .terms h3 {
+    font-size: 18px; /* Adjust font size for small screens */
+  }
+
+  .terms p {
+    font-size: 16px; /* Adjust font size for small screens */
+  }
 }

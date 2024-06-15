@@ -1,0 +1,12 @@
+<div class="col-lg-6 col-md-12 gallery-item">
+  <div class="card">
+    <img [src]="service.image" class="img-fluid card-img-top" [alt]="service.title">
+    <div class="card-body">
+      <h5 class="card-title">{{ service.title }}</h5>
+      <p class="card-text" [innerHTML]="service.description"></p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let detail of service.details">{{ detail }}</li>
+    </ul>
+  </div>
+</div>

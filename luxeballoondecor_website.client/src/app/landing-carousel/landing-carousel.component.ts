@@ -13,7 +13,7 @@ export class LandingCarouselComponent implements AfterViewInit {
     setTimeout(() => {
       const carouselElement = this.elRef.nativeElement.querySelector('#carouselExampleAutoplaying');
       if (carouselElement) {
-        const scrollPosition = carouselElement.offsetTop +300; // Get the position of the carousel
+        const scrollPosition = carouselElement.offsetTop; // Get the position of the carousel
         window.scrollTo({
           top: scrollPosition, // Scroll to the top position of the carousel
           behavior: 'smooth'

@@ -1,29 +1,123 @@
-
-.ServicesPadding {
-    margin-top: 9rem;
+/* General styling */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Google Sans", sans-serif; /* Apply Google Sans font */
 }
 
-.Services {
-  /*margin-top: 60rem;*/
-  margin-left: 10px;
+/* Padding for sections */
+.ServicesPadding, .RentalsPadding {
+  margin-top: 230px; /* Adjust margin to position below navbar */
 }
 
-  .Services img {
-    width: 622px !important;
-    height:500px !important;
+.section-title-bar {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-weight: bold; /* Bold text */
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100vw; /* Ensure it spans the full width of the viewport */
+  margin-left: calc(-50vw + 50%); /* Adjust to center the full-width element */
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Evenly space the items */
+  gap: 1rem; /* Adjust gap as needed */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 2rem); /* Three items per row */
+  margin: 1rem;
+  box-sizing: border-box; /* Ensure margin is included in width calculation */
+  text-align: center;
+  max-width: 400px; /* Set a maximum width for the cards */
+}
+
+@media (max-width: 992px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 2rem); /* Two items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 1 1 calc(100% - 2rem); /* One item per row on small screens */
+  }
+}
+
+/* Card Styling */
+.card {
+  border-radius: 15px;
+  overflow: hidden; /* Ensure content respects the border radius */
+  margin: auto;
+  width: 100%; /* Ensure card takes full width */
+  border: 2px solid #333; /* Darker border around the card */
+  max-width: 400px; /* Set a maximum width for the card */
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Set a flexible height for all cards */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px; /* Adjust the height for rental card images */
+  object-fit: cover; /* Ensure the image covers the entire container proportionally */
+}
+
+.card-body {
+  background-color: #FFFFFF; /* White background for card body */
+  color: #000000; /* Black text for high contrast */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.2rem; /* Slightly smaller font size for titles */
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.9rem; /* Standard font size for text */
+  margin-bottom: 0.5rem;
+}
+
+.list-group-item {
+  border: none; /* Remove border */
+  background-color: #FFFFFF; /* White background */
+  color: #000000; /* Black text */
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1rem; /* Adjust title size for smaller screens */
   }
 
-  .Services h1 {
-    font-size: 100px;
-    font-weight: 700;
-   
-    text-align: center !important;
+  .card-text {
+    font-size: 0.8rem; /* Adjust text size for smaller screens */
   }
-.section-tittle{
-    margin-top: -250px;
 }
 
-.rentalItem img {
-  width: 400px !important;
-  height: 500px !important;
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 0.9rem; /* Adjust title size for small screens */
+  }
+
+  .card-text {
+    font-size: 0.7rem; /* Adjust text size for small screens */
+  }
 }

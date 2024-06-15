@@ -1,236 +1,248 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"); /* Imports Font Awesome CSS for icons */
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
-/* @import url("fonts.css");    */
-/* CDN font */
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap");
-
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1050;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 19%, rgba(255, 255, 255, 0.6) 27%, rgba(255, 255, 255, 0.4) 51%, rgba(255, 255, 255, 0.3) 73%, rgba(255, 255, 255, 0.2) 77%, rgba(255, 255, 255, 0) 100%);
-}
-
-.navbar-collapse {
-  position: absolute;
-  top: 100%
-  right: 0;
-  left: 0;
-  z-index: 999;
-}
-
-.navbar-toggler {
-  z-index: 1001;
-}
-
-
-html::-webkit-scrollbar {
-  width: 10px;
-  height: 16px;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: rgba(84, 239, 234, 0.2);
-  border-radius: 10px;
-}
-
-html::-webkit-scrollbar-track {
-  background-color: #16191c;
+/* CSS variables defining minimum and maximum sizes for the logo and font */
+:root {
+  --min-logo-size: 200px; /* Minimum size for the logo */
+  --max-logo-size: 300px; /* Maximum size for the logo */
+  --min-font-size: 18px; /* Minimum font size */
+  --max-font-size: 24px; /* Maximum font size */
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Jost", sans-serif;
-  font-size: 14px;
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
-img {
-  width: 100%;
+.navbar {
+  position: absolute; /* Positions navbar absolutely within its containing element */
+  top: 0; /* Positions navbar at the top */
+  width: 100%; /* Sets navbar width to 100% of the viewport */
+  z-index: 1050; /* Ensures navbar appears above other elements */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 19%, rgba(255, 255, 255, 0.6) 27%, rgba(255, 255, 255, 0.4) 51%, rgba(255, 255, 255, 0.3) 73%, rgba(255, 255, 255, 0.2) 77%, rgba(255, 255, 255, 0) 100%); /* Gradient background for navbar */
+  display: flex; /* Uses flexbox layout */
+  justify-content: space-between; /* Distributes space between items */
+  align-items: center; /* Aligns items vertically in the center */
+  padding: 0 1rem; /* Adds padding to left and right */
+  max-width: 100%; /* Ensures navbar does not exceed 100% width */
 }
 
-li {
-  list-style: none;
+.navbar-brand img {
+  width: 100%; /* Sets image width to 100% of its container */
+  height: auto; /* Maintains aspect ratio */
+  margin-right: 16px; /* Adds margin to the right */
+  max-width: 300px; /* Maximum width for the logo */
+  min-width: 200px; /* Minimum width for the logo */
+  transition: max-width 0.3s, height 0.3s; /* Smooth transition for width and height */
 }
 
-a {
-  text-decoration: none;
+.navbar-toggler {
+  z-index: 1001; /* Ensures toggler appears above other elements */
+  background-color: rgba(0, 0, 0, 0.3); /* Sets semi-transparent background color */
+  border: 1px solid white; /* Adds white border */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 0;
+  .navbar-toggler:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Changes background color on hover */
+  }
+
+  .navbar-toggler:active {
+    background-color: black; /* Changes background color when active */
+  }
+
+  .navbar-toggler:focus {
+    outline: none; /* Removes default focus outline */
+    box-shadow: none; /* Removes box shadow on focus */
+  }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Sets background image for the toggler icon */
 }
 
-
-::selection {
-  background-color: #000;
-  color: black;
-}
-
-.form-control::placeholder {
-  color: aqua !important;
-}
-
-/* header */
-.header {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 19%, rgba(255, 255, 255, 0.6) 27%, rgba(255, 255, 255, 0.4) 51%, rgba(255, 255, 255, 0.3) 73%, rgba(255, 255, 255, 0.2) 77%, rgba(255, 255, 255, 0) 100%);
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1050;
+.header .navbar-nav {
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Aligns items vertically in the center */
+  flex-grow: 1; /* Allows navbar to grow to fill available space */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  justify-content: center; /* Centers navbar items */
+  max-width: 100%; /* Ensures navbar does not exceed 100% width */
 }
 
   .header .navbar-nav .nav-link {
-    color: #000; /* Consistent color coding */
-    font-weight: 500; /* Standard font-weight for better cross-browser compatibility */
-    margin: 0 1rem; /* Use rem for consistent scaling */
-    text-transform: capitalize;
-    padding: 1.75rem 0.438rem; /* Use rem for padding */
-    display: block;
-    font-size: 1rem; /* Base font size */
-    position: relative;
-    transition: color 0.3s ease; /* Smooth transition for hover effects */
+    color: #000; /* Sets link color to black */
+    font-weight: 500; /* Sets font weight */
+    margin: 0 1rem; /* Adds horizontal margin */
+    text-transform: capitalize; /* Capitalizes first letter of each word */
+    padding: 1.5rem 0.3rem; /* Adds vertical and horizontal padding */
+    display: block; /* Sets display to block */
+    font-size: 24px; /* Sets font size */
+    position: relative; /* Allows positioning of pseudo-elements */
+    transition: color 0.3s ease; /* Smooth transition for color */
+    text-shadow: 2px 2px 2px white; /* Adds white text shadow */
+    white-space: nowrap; /* Prevents text from wrapping */
   }
 
-  .header .navbar-nav .nav-link:focus {
-    outline: 2px solid #0056b3; /* Blue outline for better visibility on focus */
-    outline-offset: 2px;
-}
+    .header .navbar-nav .nav-link:focus {
+      outline: 2px solid #0056b3; /* Adds blue outline on focus */
+      outline-offset: 2px; /* Adds offset to outline */
+    }
 
     .header .navbar-nav .nav-link:hover {
-      color: #555; /* Subtle hover effect */
+      color: #555; /* Changes color on hover */
     }
 
     .header .navbar-nav .nav-link::after {
-      position: absolute;
-      content: "";
-      width: 0%;
-      height: 2px;
-      left: 0;
-      bottom: 0;
-      background-color: #000;
-      transition: all .5s;
+      position: absolute; /* Positions pseudo-element absolutely */
+      content: ""; /* Empty content for pseudo-element */
+      width: 0%; /* Initial width of pseudo-element */
+      height: 2px; /* Height of pseudo-element */
+      left: 0; /* Aligns pseudo-element to the left */
+      bottom: 0; /* Aligns pseudo-element to the bottom */
+      background-color: #000; /* Sets background color of pseudo-element */
+      transition: all 0.5s; /* Smooth transition for all properties */
     }
-
 
     .header .navbar-nav .nav-link:hover::after {
-      width: 100%;
+      width: 100%; /* Expands pseudo-element on hover */
     }
 
-  .header .navbar .socail {
-    display: flex;
-    gap: 25px;
+.header .social {
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 8px; /* Sets gap between social icons */
+  max-width: 100%; /* Ensures social icons do not exceed 100% width */
+  justify-content: space-between; /* Distributes space between items */
+}
+
+  .header .social .nav-link {
+    color: black; /* Sets link color to black */
+    font-size: 20px; /* Sets font size */
+    text-shadow: 2px 2px 2px white; /* Adds white text shadow */
+    padding: 1.75rem 0; /* Adds vertical padding */
+    margin: 0; /* Removes default margin */
   }
 
-    .header .navbar .socail a {
-      color: black;
-      font-size: 16px;
+  .header .social li {
+    margin: 0; /* Removes default margin */
+  }
+
+  .header .social .nav-link i {
+    transition: all 0.5s; /* Smooth transition for all properties */
+  }
+
+    .header .social .nav-link i:hover {
+      transform: rotateY(-180deg); /* Rotates icon on hover */
     }
 
-      .header .navbar .social a i {
-        transition: all .5s;
-      }
-
-        .header .navbar .socail a i:hover {
-          transform: rotateY(-180deg);
-        }
-
-/*  */
-.new-product-area {
-  margin: 100px;
-  height: 600px;
-  /* background-color: #626669; */
-}
-
-  .new-product-area h2 {
-    margin-bottom: 50px;
+/* Media queries ordered from largest to smallest */
+@media (min-width: 1240px) {
+  .navbar-brand img {
+    max-width: 300px; /* Sets maximum width for the logo on larger screens */
   }
 
-.watch-area {
-  margin: 100px;
-  height: 1000px;
-}
-
-.popular-items {
-  margin: 100px;
-  height: 900px;
-}
-
-img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  max-width: 80%;
-  overflow: hidden;
-}
-
-.item .item-img {
-  position: relative;
-  /* background-color: #ff2020; */
-  overflow: hidden;
-}
-
-  .item .item-img::after {
-    content: "";
-    /* width: 0%;
-   height: 0%; */
-    position: absolute;
-    inset: 0;
-    /* background-color: #0000008f; */
-    opacity: 0;
-    transition: all .5s;
+  .header .navbar-nav .nav-link {
+    font-size: 24px; /* Sets font size for navbar links on larger screens */
   }
 
-.item:hover .item-img::after {
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-}
-
-.item-img img {
-  transition: all 0.5s;
-}
-
-.item:hover .item-img img {
-  transform: scale(1.1);
-}
-
-/* Start Landing Section */
-.landing {
-  
-  background-size: cover;
-  height: calc(100vh - 64px);
-  position: relative;
-}
-
-  .landing .intro-text {
-    position: absolute;
-    left: 50%;
-    top: 75%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    width: 320px;
-    max-width: 100%;
-    color: black;
+  .header .navbar-nav .social {
+    margin-left: 0.25rem; /* Adds margin to the left */
+    margin-right: 0.25rem; /* Adds margin to the right */
   }
 
-    .landing .intro-text h1 {
-      margin: 0;
-      font-weight: bold;
-      font-size: 35px;
-      color: var(--main-color);
+  .header .navbar-nav .nav-link:not(.social) {
+    margin-left: 0.75rem; /* Adds margin to the left */
+    margin-right: 0.75rem; /* Adds margin to the right */
+  }
+}
+
+@media (max-width: 1240px) {
+  .navbar {
+    flex-wrap: nowrap; /* Prevents wrapping of flex items */
+  }
+
+  .navbar-brand img {
+    max-width: 300px; /* Sets maximum width for the logo */
+  }
+
+  .header .navbar-nav {
+    flex-wrap: nowrap; /* Prevents wrapping of flex items */
+    justify-content: space-between; /* Distributes space between items */
+  }
+
+    .header .navbar-nav .nav-link {
+      font-size: 20px; /* Sets font size for navbar links */
     }
 
-    .landing .intro-text p {
-      font-size: 40px;
-      line-height: 1.8;
+  .header .social {
+    justify-content: space-around; /* Distributes space around items */
+  }
+
+    .header .social .nav-link {
+      font-size: 20px; /* Sets font size for social links */
     }
-/* End Landing Section */
+
+  .header .navbar-nav .nav-link:not(.social) {
+    margin-left: 1rem; /* Adds margin to the left */
+    margin-right: 1rem; /* Adds margin to the right */
+  }
+
+  .header .navbar-nav .social {
+    margin-left: 0.25rem; /* Adds margin to the left */
+    margin-right: 0.25rem; /* Adds margin to the right */
+  }
+
+  .header .navbar-nav .nav-link:not(.social) {
+    margin-left: 0.75rem; /* Adds margin to the left */
+    margin-right: 0.75rem; /* Adds margin to the right */
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-brand img {
+    max-width: 270px; /* Sets maximum width for the logo on smaller screens */
+  }
+
+  .header .navbar-nav .nav-link {
+    font-size: 20px; /* Sets font size for navbar links on smaller screens */
+  }
+
+  .header .social .nav-link {
+    font-size: 20px; /* Sets font size for social links on smaller screens */
+  }
+
+  .header .navbar-nav .social {
+    margin-left: 0.25rem; /* Adds margin to the left */
+    margin-right: 0.25rem; /* Adds margin to the right */
+  }
+
+  .header .navbar-nav .nav-link:not(.social) {
+    margin-left: 0.6rem; /* Adds margin to the left */
+    margin-right: 0.6rem; /* Adds margin to the right */
+  }
+}
+
+@media (max-width: 991.98px) {
+
+
+  .header .navbar-nav .nav-link {
+    font-weight: 600;
+  }
+  .navbar-brand img {
+    max-width: 220px; /* Sets maximum width for the logo on smaller screens */
+  }
+
+  .navbar-collapse {
+    background: rgba(255, 255, 255, 0.85); /* Sets semi-transparent background */
+    position: absolute; /* Positions absolutely within the container */
+    top: 0; /* Positions at the top */
+    left: 0; /* Positions to the left */
+    width: 100%; /* Sets width to 100% */
+    height: 100vh; /* Sets height to 100vh */
+    justify-content: flex-start; /* Aligns items at the start */
+    align-items: center; /* Aligns items in the center */
+    flex-direction: column; /* Stacks items vertically */
+    padding-top: 125px; /* Adds padding to the top */
+  }
+}

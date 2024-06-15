@@ -12,6 +12,11 @@ import { TermsComponent } from './terms/terms.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CardComponent } from './cards/card/card.component';
 import { LandingCarouselComponent } from './landing-carousel/landing-carousel.component';
+import { FooterComponent } from './footer/footer.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { ServiceItemComponent } from './service-item/service-item.component';
+import { RentalItemComponent } from './rental-item/rental-item.component';
+
 
 const routes: Routes = [
   { path: 'home', redirectTo: '', pathMatch:'full'},
@@ -21,7 +26,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'terms', component: TermsComponent },
-  { path: 'landing-carousel', component: LandingCarouselComponent }
+  { path: 'landing-carousel', component: LandingCarouselComponent },
+  { path: 'footer', component: FooterComponent }
 
 ]
 
@@ -37,6 +43,11 @@ const routes: Routes = [
     TermsComponent,
     CardComponent,
     HomeComponent,
+    FooterComponent,
+    TestimonialsComponent,
+    ServiceItemComponent,
+    RentalItemComponent
+
   ],
   imports: [
     BrowserModule,

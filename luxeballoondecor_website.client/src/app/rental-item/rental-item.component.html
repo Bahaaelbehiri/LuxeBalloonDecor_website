@@ -1,0 +1,10 @@
+<div class="col-lg-4 col-md-6 col-12 gallery-item">
+  <div class="card">
+    <img [src]="rental.image" class="card-img-top" [alt]="rental.title">
+    <div class="card-body">
+      <h5 class="card-title">{{ rental.title }}</h5>
+      <p class="card-text">{{ rental.description }}</p>
+      <p class="card-text"><small class="text-body-secondary" [innerHTML]="rental.details"></small></p>
+    </div>
+  </div>
+</div>
